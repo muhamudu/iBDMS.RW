@@ -1,15 +1,15 @@
 import React from 'react';
 
 
-class DepartementModal extends React.Component{
+class EditDepartementModal extends React.Component{
     render(){
         return (
 
-            <div class="modal fade" id="AddDepartementModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal fade" id="EditDepartementModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="myLargeModalLabel">Add Departement</h4>
+                            <h4 class="modal-title" id="myLargeModalLabel">Update Departement</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                         </div>
                         <form>
@@ -37,7 +37,7 @@ class DepartementModal extends React.Component{
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary">Add Departement</button>
+                                <button type="submit" class="btn btn-primary">Update Departement</button>
                             </div>
                         </form>
                     </div>
@@ -46,4 +46,4 @@ class DepartementModal extends React.Component{
         );  
     }
 }
-export default DepartementModal;
+export default EditDepartementModal;
