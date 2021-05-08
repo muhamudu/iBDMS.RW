@@ -2,8 +2,6 @@
 import Login from './login-compmonent/Login';
 import ForgotPassword from './login-compmonent/ForgotPassword';
 
-// App CSS
-// import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
