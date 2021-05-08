@@ -34,9 +34,9 @@ class SidebarLeft extends React.Component{
                                         <span className="micon dw dw-add-user"></span><span className="mtext">Employee</span>
                                     </a>
                                     <ul className="submenu">
-                                        <li><Link to="ManageEmployee">Manage Employees</Link></li>
-                                        <li><Link to="Evaluation">Evaluation</Link></li>
-                                        <li><Link to="EvaluationReport">Evaluation Report</Link></li>
+                                        <li><Link to="/ManageEmployee">Manage Employees</Link></li>
+                                        <li><Link to="/Evaluation">Evaluation</Link></li>
+                                        <li><Link to="/EvaluationReport">Evaluation Report</Link></li>
                                     </ul>
                                 </li>
                                 <li>
