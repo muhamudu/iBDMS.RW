@@ -1,26 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import HeaderLeft from './Header-left';
-import HeaderRight from './Header-right';
-import PageHeader from './PageHeader';
-// import PreLoader from './Pre-loader';
-import SidebarLeft from './SidebarLeft';
-import SidebarRight from './SidebarRight';
+import Header from '../bars/Header';
+// import PreLoader from '../bars/Pre-loader';
+import SidebarLeft from '../bars/SidebarLeft';
+import SidebarRight from '../bars/SidebarRight';
 
 // Modals
-import DepartementModal from './modals/DepartementModal';
-import EditDepartementModal from './modals/EditDepartement';
+import DepartementModal from '../modals/DepartementModal';
+import EditDepartementModal from '../modals/EditDepartement';
 
 class Departement extends React.Component{
     render(){
         return (
             <div>
                 {/* <div>{<PreLoader/>}</div>  */}
-                <div className="header">
-                    <div>{<HeaderLeft/>}</div>
-                    <div>{<HeaderRight/>}</div>
-                </div>
-
+                <div>{<Header/>}</div>
                 <div>{<SidebarRight/>}</div>
                 <div>{<SidebarLeft/>}</div>
 
@@ -79,12 +73,12 @@ class Departement extends React.Component{
                                                 <td>Sagittarius</td>
                                                 <td>
                                                     <div class="dropdown">
-                                                        <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                                                        <Link class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" role="button" data-toggle="dropdown">
                                                             <i class="dw dw-more"></i>
-                                                        </a>
+                                                        </Link>
                                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
                                                             <button class="dropdown-item"  data-toggle="modal" data-target="#EditDepartementModal"><i class="dw dw-edit2"></i> Edit</button>
-                                                            <a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a>
+                                                            <Link class="dropdown-item" to=""><i class="dw dw-delete-3"></i> Delete</Link>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -94,7 +88,6 @@ class Departement extends React.Component{
                                 </div>
                             </div>
                             {/* <!-- Simple Datatable End --> */}
-
                         </div>
                     </div>
                 </div>

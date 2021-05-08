@@ -1,8 +1,8 @@
 // Login
 import Login from './login-compmonent/Login';
 import ForgotPassword from './login-compmonent/ForgotPassword';
-import Dashboard from './hr-account/Dashboard';
-import Departement from './hr-account/Departement';
+import Dashboard from './hr-account/pages/Dashboard';
+import Departement from './hr-account/pages/Departement';
 
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';

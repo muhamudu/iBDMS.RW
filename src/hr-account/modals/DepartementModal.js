@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 class DepartementModal extends React.Component{
     render(){
         return (

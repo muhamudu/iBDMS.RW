@@ -1,10 +1,8 @@
 import React from 'react';
-import Footer from './Footer';
-import HeaderLeft from './Header-left';
-import HeaderRight from './Header-right';
-// import PreLoader from './Pre-loader';
-import SidebarLeft from './SidebarLeft';
-import SidebarRight from './SidebarRight';
+import Footer from '../bars/Footer';
+import Header from '../bars/Header';
+import SidebarLeft from '../bars/SidebarLeft';
+import SidebarRight from '../bars/SidebarRight';
 
 
 class Dashboard extends React.Component{
@@ -12,10 +10,7 @@ class Dashboard extends React.Component{
         return (
             <div>
                 {/* <div>{<PreLoader/>}</div>  */}
-                <div className="header">
-                    <div>{<HeaderLeft/>}</div>
-                    <div>{<HeaderRight/>}</div>
-                </div>
+                <div>{<Header/>}</div>
                 <div>{<SidebarRight/>}</div>
                 <div>{<SidebarLeft/>}</div>
                 <div className="mobile-menu-overlay"></div>

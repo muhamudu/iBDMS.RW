@@ -7,10 +7,10 @@ class SidebarLeft extends React.Component{
             <div>
                 <div className="left-side-bar">
                     <div className="brand-logo">
-                        <a href="index.html">
+                        <Link to="/Dashboard" >
                             <img src="vendors/images/deskapp-logo.svg" alt="" className="dark-logo"/>
                             <img src="vendors/images/deskapp-logo-white.svg" alt="" className="light-logo"/>
-                        </a>
+                        </Link>
                         <div className="close-sidebar" data-toggle="left-sidebar-close">
                             <i className="ion-close-round"></i>
                         </div>
@@ -57,10 +57,10 @@ class SidebarLeft extends React.Component{
                                     
                                 </li>
                                 <li>
-                                    <a href="" target="_blank" className="dropdown-toggle no-arrow">
+                                    <Link to="" target="_blank" className="dropdown-toggle no-arrow">
                                         <span className="micon dw dw-paper-plane1"></span>
                                         <span className="mtext">More Toturials <img src="vendors/images/coming-soon.png" alt="" width="25" /></span>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>

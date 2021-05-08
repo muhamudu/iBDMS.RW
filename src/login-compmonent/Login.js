@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 class Login extends React.Component{
     render(){
@@ -8,9 +8,9 @@ class Login extends React.Component{
                 <div className="login-header box-shadow">
                     <div className="container-fluid d-flex justify-content-between align-items-center">
                         <div className="brand-logo">
-                            <a href="login.html">
+                            <Link to="/Dashboard">
                                 <img src="vendors/images/deskapp-logo.svg" alt="" />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
