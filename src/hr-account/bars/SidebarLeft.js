@@ -30,9 +30,9 @@ class SidebarLeft extends React.Component{
                                 </li>
                                 
                                 <li className="dropdown">
-                                    <a href="javascript:;" className="dropdown-toggle">
+                                    <Link to="#" className="dropdown-toggle">
                                         <span className="micon dw dw-add-user"></span><span className="mtext">Employee</span>
-                                    </a>
+                                    </Link>
                                     <ul className="submenu">
                                         <li><Link to="/ManageEmployee">Manage Employees</Link></li>
                                         <li><Link to="/Evaluation">Evaluation</Link></li>

@@ -72,7 +72,7 @@ class Login extends React.Component{
                                                         use code for form submit
                                                         <input className="btn btn-primary btn-lg btn-block" type="submit" value="Sign In">
                                                     --> */}
-                                                    <a href="/Dashboard" className="btn btn-primary btn-lg btn-block">Sign-In</a>
+                                                    <Link to="/Dashboard" className="btn btn-primary btn-lg btn-block">Sign-In</Link>
                                                 </div>
                                             </div>
                                         </div>

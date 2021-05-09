@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Header from '../bars/Header';
 // import PreLoader from '../bars/Pre-loader';
 import SidebarLeft from '../bars/SidebarLeft';
-import SidebarRight from '../bars/SidebarRight';
 
 // Modals
 import DepartementModal from '../modals/DepartementModal';
@@ -15,7 +14,6 @@ class Departement extends React.Component{
             <div>
                 {/* <div>{<PreLoader/>}</div>  */}
                 <div>{<Header/>}</div>
-                <div>{<SidebarRight/>}</div>
                 <div>{<SidebarLeft/>}</div>
 
                 {/* Modals */}
@@ -92,7 +90,6 @@ class Departement extends React.Component{
                     </div>
                 </div>
             </div>
-            
         );  
     }
 }

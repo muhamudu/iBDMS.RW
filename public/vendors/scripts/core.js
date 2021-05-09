@@ -221,7 +221,7 @@ function copyConfig(to, from) {
     if (!isUndefined(from._tzm)) {
         to._tzm = from._tzm;
     }
-    if (!isUndefined(from._isUTC)) {
+    if (!isUndefined(from._isUTC)) { 
         to._isUTC = from._isUTC;
     }
     if (!isUndefined(from._offset)) {
