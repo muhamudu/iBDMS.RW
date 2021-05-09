@@ -28,17 +28,12 @@ class SidebarLeft extends React.Component{
                                         <span className="micon dw dw-diagram"></span><span className="mtext">Departement</span>
                                     </Link>
                                 </li>
-                                
-                                <li className="dropdown">
-                                    <Link to="#" className="dropdown-toggle">
-                                        <span className="micon dw dw-add-user"></span><span className="mtext">Employee</span>
+                                <li>
+                                    <Link to="/Employees" className="dropdown-toggle no-arrow">
+                                        <span className="micon dw dw-add-user"></span><span className="mtext">Employees</span>
                                     </Link>
-                                    <ul className="submenu">
-                                        <li><Link to="/ManageEmployee">Manage Employees</Link></li>
-                                        <li><Link to="/Evaluation">Evaluation</Link></li>
-                                        <li><Link to="/EvaluationReport">Evaluation Report</Link></li>
-                                    </ul>
                                 </li>
+                                
                                 <li>
                                     <Link to="/Employees" className="dropdown-toggle no-arrow">
                                         <span className="micon dw dw-sheet"></span><span className="mtext">Payroll</span>
