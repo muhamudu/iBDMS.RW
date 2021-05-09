@@ -107,8 +107,13 @@ class AddEmployeeModal extends React.Component{
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label>Company Name :</label>
-                                                    <input type="text" class="form-control"/>
+                                                    <label>Departement :</label>
+                                                    <select class="form-control" name="">
+                                                        <option>Cashier</option>
+                                                        <option>Store Keeper</option>
+                                                        <option>Gate Keeper</option>
+                                                        <option>Cleaner</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
@@ -125,7 +130,7 @@ class AddEmployeeModal extends React.Component{
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label>Interview For :</label>
+                                                    <label>Interviewer For :</label>
                                                     <input type="text" class="form-control"/>
                                                 </div>
                                                 <div class="form-group">
@@ -150,31 +155,33 @@ class AddEmployeeModal extends React.Component{
                                         </div>
                                     </section>
                                     {/* <!-- Step 4 --> */}
-                                    <h5>Remark</h5>
+                                    <h5>Files</h5>
                                     <section>
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label>Behaviour :</label>
-                                                    <input type="text" class="form-control"/>
+                                                    <label>Contract Started :</label>
+                                                    <input type="text" class="form-control date-picker" placeholder="Select Date"/>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label>Confidance</label>
-                                                    <input type="text" class="form-control"/>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>Result</label>
-                                                    <select class="form-control">
-                                                        <option>Select Result</option>
-                                                        <option>Selected</option>
-                                                        <option>Rejected</option>
-                                                    </select>
+                                                    <label>Upload Contract</label>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input"/>
+                                                        <label class="custom-file-label">Choose file</label>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label>Comments</label>
-                                                    <textarea class="form-control"></textarea>
+                                                    <label>Contract Ends :</label>
+                                                    <input type="text" class="form-control date-picker" placeholder="Select Date"/>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Upload CV</label>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input"/>
+                                                        <label class="custom-file-label">Choose file</label>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
